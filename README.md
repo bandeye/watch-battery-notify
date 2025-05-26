@@ -1,2 +1,2 @@
 # watch-battery-notify
-Notifies when battery reach 20% and 80%.
+Notifies when battery reaches 20% and 80%.
