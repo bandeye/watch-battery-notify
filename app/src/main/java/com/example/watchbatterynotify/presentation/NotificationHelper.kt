@@ -26,7 +26,6 @@ object NotificationHelper {
             val notificationManager: NotificationManager =
                 context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(channel)
-
     }
 
     fun showBatteryLowNotification(context: Context, batteryPct: Int) {

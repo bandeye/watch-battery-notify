@@ -22,6 +22,7 @@ class BatteryLevelReceiver : BroadcastReceiver() {
             }
 
             Log.d(tag, "Battery level: $batteryPct%")
+            println("Battery level: $batteryPct%")
 
             if (batteryPct != -1 && batteryPct <= batteryThreshold) {
                 // Trigger notification

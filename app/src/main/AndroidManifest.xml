@@ -36,9 +36,10 @@
         </activity>
         <receiver
             android:name=".presentation.BatteryLevelReceiver"
-            android:exported="true"> <intent-filter>
-            <action android:name="android.intent.action.BATTERY_CHANGED" />
-        </intent-filter>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
         </receiver>
     </application>
 

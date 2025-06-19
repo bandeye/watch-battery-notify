@@ -50,11 +50,7 @@ class MainActivity : ComponentActivity() {
         }
 
         // Request notification permission if needed
-
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
-            }
-
+        requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
 
         // Initialize the notification channel (can be done anywhere, e.g., in Application class or here)
         NotificationHelper.createNotificationChannel(this)
